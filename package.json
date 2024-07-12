@@ -1,0 +1,29 @@
+{
+  "name": "poc-theme",
+  "version": "0.0.1",
+  "description": "A simple multi brand theme for Design Systems",
+  "main": "index.js",
+  "scripts": {
+    "scss:clean": "rimraf dist",
+    "scss:compile": "npm run scss:clean && sass --no-source-map src:dist/css",
+    "scss:minify": "npm run scss:clean && sass --no-source-map --style compressed src:dist/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eduk29/poc-theme.git"
+  },
+  "keywords": [
+    "design system",
+    "centralized theme"
+  ],
+  "author": "José Eduardo Trindade E Marques",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Eduk29/poc-theme/issues"
+  },
+  "homepage": "https://github.com/Eduk29/poc-theme#readme",
+  "dependencies": {
+    "rimraf": "^6.0.1",
+    "sass": "^1.77.8"
+  }
+}
