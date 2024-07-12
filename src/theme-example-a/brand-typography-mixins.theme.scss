@@ -1,0 +1,87 @@
+@mixin brand-font-weight-regular-mixin {
+    font-weight: 400;
+}
+
+@mixin brand-font-weight-medium-mixin {
+    font-weight: 500;
+}
+
+@mixin brand-font-weight-bold-mixin {
+    font-weight: 700;
+}
+
+@mixin brand-font-family-mixin {
+    font-family: 'Robot', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+@mixin brand-h1-mixin {
+    @include brand-font-family-mixin();
+    @include brand-font-weight-medium-mixin();
+    font-style: normal;
+    font-size: 60px;
+    line-height: 72px;
+}
+
+@mixin brand-h2-mixin {
+    @include brand-font-family-mixin();
+    @include brand-font-weight-medium-mixin();
+    font-style: normal;
+    font-size: 48px;
+    line-height: 52px;
+}
+
+@mixin brand-h3-mixin {
+    @include brand-font-family-mixin();
+    @include brand-font-weight-medium-mixin();
+    font-style: normal;
+    font-size: 42px;
+    line-height: 48px;
+}
+
+@mixin brand-h4-mixin {
+    @include brand-font-family-mixin();
+    @include brand-font-weight-medium-mixin();
+    font-style: normal;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+@mixin brand-h5-mixin {
+    @include brand-font-family-mixin();
+    @include brand-font-weight-medium-mixin();
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@mixin brand-h6-mixin {
+    @include brand-font-family-mixin();
+    @include brand-font-weight-medium-mixin();
+    font-style: normal;
+    font-size: 30px;
+    line-height: 28px;
+}
+
+@mixin brand-body-mixin {
+    @include brand-font-family-mixin();
+    @include brand-font-weight-medium-mixin();
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin brand-button-mixin {
+    @include brand-font-family-mixin();
+    @include brand-font-weight-medium-mixin();
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+@mixin brand-caption-mixin {
+    @include brand-font-family-mixin();
+    @include brand-font-weight-medium-mixin();
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+}
