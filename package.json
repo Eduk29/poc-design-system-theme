@@ -4,9 +4,11 @@
   "description": "A simple multi brand theme for Design Systems",
   "main": "index.js",
   "scripts": {
-    "scss:clean": "rimraf dist",
+    "clean": "rimraf dist",
     "scss:compile": "npm run scss:clean && sass --no-source-map src:dist/css",
-    "scss:minify": "npm run scss:clean && sass --no-source-map --style compressed src:dist/css"
+    "scss:minify": "npm run scss:clean && sass --no-source-map --style compressed src:dist/css",
+    "stylelint:check": "stylelint src/**/*.scss",
+    "stylelint:fix": "stylelint src/**/*.scss --fix"
   },
   "repository": {
     "type": "git",
@@ -22,8 +24,11 @@
     "url": "https://github.com/Eduk29/poc-theme/issues"
   },
   "homepage": "https://github.com/Eduk29/poc-theme#readme",
-  "dependencies": {
+  "devDependencies": {
     "rimraf": "^6.0.1",
-    "sass": "^1.77.8"
+    "sass": "^1.77.8",
+    "stylelint": "^16.7.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-config-standard-scss": "^13.1.0"
   }
 }
