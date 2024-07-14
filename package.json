@@ -1,6 +1,6 @@
 {
   "name": "poc-theme",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "A simple multi brand theme for Design Systems",
   "main": "index.js",
   "scripts": {
@@ -8,8 +8,8 @@
     "release:major": "standard-version --release-as major",
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
-    "scss:compile": "npm run scss:clean && sass --no-source-map src:dist/css",
-    "scss:minify": "npm run scss:clean && sass --no-source-map --style compressed src:dist/css",
+    "scss:compile": "npm run clean && sass --no-source-map src:dist/css",
+    "scss:minify": "npm run clean && sass --no-source-map --style compressed src:dist/css",
     "stylelint:check": "stylelint src/**/*.scss",
     "stylelint:fix": "stylelint src/**/*.scss --fix",
     "prepare": "husky install"
