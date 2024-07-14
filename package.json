@@ -1,10 +1,13 @@
 {
   "name": "poc-theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple multi brand theme for Design Systems",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
+    "release:major": "standard-version --release-as major",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
     "scss:compile": "npm run scss:clean && sass --no-source-map src:dist/css",
     "scss:minify": "npm run scss:clean && sass --no-source-map --style compressed src:dist/css",
     "stylelint:check": "stylelint src/**/*.scss",
@@ -35,6 +38,7 @@
     "lint-staged": "^15.2.7",
     "rimraf": "^6.0.1",
     "sass": "^1.77.8",
+    "standard-version": "^9.5.0",
     "stylelint": "^16.7.0",
     "stylelint-config-prettier-scss": "^1.0.0",
     "stylelint-config-standard": "^36.0.1",
