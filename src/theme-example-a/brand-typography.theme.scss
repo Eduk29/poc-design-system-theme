@@ -1,44 +1,44 @@
-@import './brand-typography-mixins.theme.scss';
+@import './brand-typography-mixins.theme';
 
 h1,
 .brand-h1 {
-    @include brand-h1-mixin();
+    @include brand-h1-mixin;
 }
 
 h2,
 .brand-h2 {
-    @include brand-h2-mixin();
+    @include brand-h2-mixin;
 }
 
 h3,
 .brand-h3 {
-    @include brand-h3-mixin();
+    @include brand-h3-mixin;
 }
 
 h4,
 .brand-h4 {
-    @include brand-h4-mixin();
+    @include brand-h4-mixin;
 }
 
 h5,
 .brand-h5 {
-    @include brand-h5-mixin();
+    @include brand-h5-mixin;
 }
 
 h6,
 .brand-h6 {
-    @include brand-h6-mixin();
+    @include brand-h6-mixin;
 }
 
 p,
 .brand-body {
-    @include brand-body-mixin();
+    @include brand-body-mixin;
 }
 
 .brand-button {
-    @include brand-button-mixin();
+    @include brand-button-mixin;
 }
 
 .brand-caption {
-    @include brand-caption-mixin();
+    @include brand-caption-mixin;
 }
