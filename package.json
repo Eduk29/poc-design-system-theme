@@ -1,5 +1,5 @@
 {
-  "name": "poc-theme",
+  "name": "design-system-theme",
   "version": "0.0.1",
   "description": "A simple multi brand theme for Design Systems",
   "main": "index.js",
@@ -12,11 +12,11 @@
     "scss:minify": "npm run clean && sass --no-source-map --style compressed src:dist/css",
     "stylelint:check": "stylelint src/**/*.scss",
     "stylelint:fix": "stylelint src/**/*.scss --fix",
-    "prepare": "husky install"
+    "prepare": "husky && husky install"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Eduk29/poc-theme.git"
+    "url": "git+https://github.com/Eduk29/design-system-theme.git"
   },
   "keywords": [
     "design system",
@@ -25,9 +25,9 @@
   "author": "José Eduardo Trindade E Marques",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/Eduk29/poc-theme/issues"
+    "url": "https://github.com/Eduk29/design-system-theme/issues"
   },
-  "homepage": "https://github.com/Eduk29/poc-theme#readme",
+  "homepage": "https://github.com/Eduk29/design-system-theme#readme",
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
